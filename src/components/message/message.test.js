@@ -3,7 +3,7 @@ import Message from "./Message";
 
 describe("should check the message component", () => {
   // Message correctly render when loggedIn is true
-  test("should check when the loggedIn is true", () => {
+  it("should check when the loggedIn is true", () => {
     render(<Message loggedIn={true} />);
     expect(screen.getByText("Hello, User!")).toBeInTheDocument();
   });
@@ -12,7 +12,7 @@ describe("should check the message component", () => {
 });
 
 describe("should check the logged in false", () => {
-  test("should check when the loggedIn is false", () => {
+  fit("should check when the loggedIn is false", () => {
     render(<Message loggedIn={false} />);
     expect(screen.getByText("Please Log In")).toBeInTheDocument();
   });
