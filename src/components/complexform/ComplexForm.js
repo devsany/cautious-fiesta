@@ -112,7 +112,7 @@ const ComplexForm = () => {
       {formSubmitted ? (
         <div>
           <h2>Thank you for submitting the form!</h2>
-          <p>We will get back to you shortly.</p>
+          <p data-testid="header-paragraph">We will get back to you shortly.</p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} encType="multipart/form-data">
@@ -238,6 +238,7 @@ const ComplexForm = () => {
           {/* Accept Terms Checkbox */}
           <label>
             <input
+            data-testid='term-condition-checkbox'
               type="checkbox"
               name="acceptTerms"
               checked={formData.acceptTerms}
@@ -263,6 +264,7 @@ const ComplexForm = () => {
           {/* Profile Picture Upload */}
           <label htmlFor="profilePicture">Profile Picture</label>
           <input
+          data-testid='file-input-box'
             type="file"
             id="profilePicture"
             name="profilePicture"
@@ -297,6 +299,7 @@ const ComplexForm = () => {
           {/* Privacy Policy Checkbox */}
           <label>
             <input
+            data-testid='term-condition-checkbox-2'
               type="checkbox"
               name="agreeToPrivacyPolicy"
               checked={formData.agreeToPrivacyPolicy}
