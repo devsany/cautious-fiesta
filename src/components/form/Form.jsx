@@ -3,10 +3,16 @@ import React from "react";
 const Form = () => {
   return (
     <div>
+      <h1>Job application form</h1>
+      <h2>Section 1</h2>
       <form action="">
         <div>
-          <label htmlFor="name">Enter your Name</label>
-          <input type="text" placeholder="Enter your name" />
+          <label htmlFor="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" />
+        </div>
+        <div>
+          <label htmlFor="bio">Bio</label>
+          <textarea name="bio" id="bio" />
         </div>
         <div>
           <label htmlFor="job-location">
