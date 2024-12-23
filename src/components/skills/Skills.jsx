@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Skills = ({ skill }) => {
+  const [show, setShow] = useState(true);
   return (
     <div>
       <header>Skill list below</header>
@@ -9,6 +10,17 @@ const Skills = ({ skill }) => {
           return <li>{item}</li>;
         })}
       </ul>
+      <div>
+        {show ? (
+          <div>
+            <button onClick={() => setShow(false)}>Login</button>
+          </div>
+        ) : (
+          <div>
+            <button>Start learning</button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

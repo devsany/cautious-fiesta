@@ -18,4 +18,21 @@ describe("Skill", () => {
       ).toBeInTheDocument();
     });
   });
+  test("should check the login button", () => {
+    render(<Skills skill={skill} />);
+
+    expect(
+      screen.getByRole("button", {
+        name: "Login",
+      })
+    ).toBeInTheDocument();
+  });
+  test("should check the Start learning button", () => {
+    render(<Skills skill={skill} />);
+    expect(
+      screen.queryByRole("button", {
+        name: "Strat learning",
+      })
+    ).not.toBeInTheDocument();
+  });
 });
