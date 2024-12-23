@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 // import ComplexForm from "./components/complexform/ComplexForm";
 
-function App() {
+function Show() {
   const [show, setShow] = useState(false);
   useEffect(() => {
     setTimeout(() => {
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default Show;
