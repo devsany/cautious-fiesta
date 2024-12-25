@@ -26,4 +26,16 @@ describe("should check the paginati element", () => {
     fireEvent.click(screen.getByRole("button", { name: "Previous" }));
     expect(screen.getByText("Page 2 of 10")).toBeInTheDocument();
   });
+  test('when the current page is 1, the "Previous" button should be disabled', () => {
+    render(
+      <Pagination totalPages={10} currentPage={1} onPageChange={() => {}} />
+    );
+    expect(screen.getByRole("button", { name: "Previous" })).toBeDisabled();
+  });
+  test('when the current page is 10, the "Next" button should be disabled', () => {
+    render(
+      <Pagination totalPages={10} currentPage={10} onPageChange={() => {}} />
+    );
+    expect(screen.getByRole("button", { name: "Next" })).toBeDisabled();
+  });
 });
