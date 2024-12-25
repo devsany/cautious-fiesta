@@ -1,6 +1,7 @@
 import "./App.css";
 import TodoList from "./components/q22/TodoList";
 import SearchBar from "./components/q25/SearchBar";
+import StarRating from "./components/q35/StarRating";
 // import ComplexForm from "./components/complexform/ComplexForm";
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
   return (
     <div className="App">
       {/* <ComplexForm /> */}
-      <SearchBar items={items} />
+      {/* <SearchBar items={items} /> */}
+      <StarRating />
     </div>
   );
 }
