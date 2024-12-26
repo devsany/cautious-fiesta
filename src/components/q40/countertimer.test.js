@@ -53,7 +53,7 @@ describe("should check the counter element", () => {
       })
     );
     act(() => {
-      jest.advanceTimersByTime(1000);
+      jest.useFakeTimers(1000);
     });
     expect(
       screen.queryByText(/Remaining Time: 2 seconds/i)
