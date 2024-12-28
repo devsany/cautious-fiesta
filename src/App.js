@@ -1,19 +1,43 @@
-import "./App.css";
-import TodoList from "./components/q22/TodoList";
-import SearchBar from "./components/q25/SearchBar";
-import StarRating from "./components/q35/StarRating";
-// import ComplexForm from "./components/complexform/ComplexForm";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Routes,
+} from "react-router-dom";
+import Counter from "./practicsComponent/q1/Counter";
 
-function App() {
-  const items = [{ name: "apple" }, { name: "banana" }, { name: "orange" }];
+const Home = () => <h1>Home Page</h1>;
+const About = () => <h1>About Page</h1>;
+const Contact = () => <h1>Contact Page</h1>;
 
+const App = () => {
   return (
-    <div className="App">
-      {/* <ComplexForm /> */}
-      {/* <SearchBar items={items} /> */}
-      <StarRating />
-    </div>
+    // <Router>
+    //   <nav>
+    //     <ul>
+    //       <li>
+    //         <Link to="/">Home</Link>
+    //       </li>
+    //       <li>
+    //         <Link to="/about">About</Link>
+    //       </li>
+    //       <li>
+    //         <Link to="/contact">Contact</Link>
+    //       </li>
+    //     </ul>
+    //   </nav>
+    //   <Routes>
+    //     <Route exact path="/" component={Home} />
+    //     <Route path="/about" component={About} />
+    //     <Route path="/contact" component={Contact} />
+    //   </Routes>
+    // </Router>
+    <>
+      <Counter />
+    </>
   );
-}
+};
 
 export default App;
