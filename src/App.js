@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Counter from "./practicsComponent/q1/Counter";
 import Todo from "./practicsComponent/q2/Todo";
+import DynamicForm from "./practicsComponent/q3/DynamicForm";
 
 const Home = () => <h1>Home Page</h1>;
 const About = () => <h1>About Page</h1>;
@@ -38,6 +39,7 @@ const App = () => {
     <>
       <Counter />
       <Todo />
+      <DynamicForm />
     </>
   );
 };
