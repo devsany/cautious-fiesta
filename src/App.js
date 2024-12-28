@@ -7,6 +7,7 @@ import {
   Routes,
 } from "react-router-dom";
 import Counter from "./practicsComponent/q1/Counter";
+import Todo from "./practicsComponent/q2/Todo";
 
 const Home = () => <h1>Home Page</h1>;
 const About = () => <h1>About Page</h1>;
@@ -36,6 +37,7 @@ const App = () => {
     // </Router>
     <>
       <Counter />
+      <Todo />
     </>
   );
 };
