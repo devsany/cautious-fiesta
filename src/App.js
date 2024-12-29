@@ -9,6 +9,10 @@ import {
 import Counter from "./practicsComponent/q1/Counter";
 import Todo from "./practicsComponent/q2/Todo";
 import DynamicForm from "./practicsComponent/q3/DynamicForm";
+import FetchAPIData from "./practicsComponent/q4/FetchAPIData";
+import Value from "./practicsComponent/q5/Value";
+import HigherOrderComponent from "./practicsComponent/q6/HigherOrderComponent";
+import LowerOrderComponent from "./practicsComponent/q6/lowerORderComponent";
 
 const Home = () => <h1>Home Page</h1>;
 const About = () => <h1>About Page</h1>;
@@ -40,6 +44,9 @@ const App = () => {
       <Counter />
       <Todo />
       <DynamicForm />
+      <FetchAPIData />
+      <Value />
+      <LowerOrderComponent />
     </>
   );
 };
