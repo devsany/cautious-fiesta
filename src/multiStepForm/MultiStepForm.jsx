@@ -111,7 +111,7 @@ const MultiStepForm = () => {
           )}
           {formInputNumber === 3 && (
             <button type="submit" className="form-btn submit-btn">
-              Submit
+              submit
             </button>
           )}
         </div>
